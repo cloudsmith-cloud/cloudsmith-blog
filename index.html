@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CloudSmith Blog</title>
+  <meta name="description" content="Engineering updates, release notes, and technical deep dives from the CloudSmith team." />
+  <link rel="icon" type="image/svg+xml" href="https://cloudsmith.cloud/favicon.svg">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --orange: #f97316; --bg: #0a0a0a; --surface: #111111; --border: rgba(255,255,255,0.07); --text: #e5e5e5; --muted: #a3a3a3; }
+    body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; min-height: 100vh; display: flex; flex-direction: column; }
+    nav { display: flex; align-items: center; justify-content: space-between; padding: 1rem 2rem; background: rgba(10,10,10,0.9); border-bottom: 1px solid var(--border); }
+    .nav-brand { font-weight: 800; font-size: 1.1rem; color: var(--text); text-decoration: none; letter-spacing: -0.02em; }
+    .nav-brand span { color: var(--orange); }
+    .nav-link { color: var(--muted); text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+    .nav-link:hover { color: var(--text); }
+    main { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 5rem 2rem; background: radial-gradient(ellipse 80% 50% at 50% -5%, rgba(249,115,22,0.1) 0%, transparent 70%); }
+    .badge { display: inline-block; padding: 0.3rem 0.9rem; border-radius: 9999px; border: 1px solid var(--orange); color: var(--orange); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 1.5rem; }
+    h1 { font-size: clamp(2rem, 6vw, 3.5rem); font-weight: 800; letter-spacing: -0.03em; background: linear-gradient(140deg, #fff 30%, var(--orange) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 1rem; }
+    .sub { font-size: 1rem; color: var(--muted); max-width: 480px; margin: 0 auto 2.5rem; line-height: 1.75; }
+    .links { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.7rem 1.5rem; border-radius: 0.5rem; font-weight: 600; font-size: 0.9rem; text-decoration: none; transition: opacity 0.15s; }
+    .btn-primary { background: var(--orange); color: #fff; }
+    .btn-ghost { border: 1px solid var(--border); color: var(--muted); background: transparent; }
+    .btn:hover { opacity: 0.8; }
+    footer { padding: 1.5rem 2rem; border-top: 1px solid var(--border); text-align: center; color: var(--muted); font-size: 0.8rem; }
+    footer a { color: var(--muted); text-decoration: none; }
+    footer a:hover { color: var(--text); }
+  </style>
+</head>
+<body>
+  <nav>
+    <a class="nav-brand" href="https://cloudsmith.cloud">Cloud<span>Smith</span></a>
+    <a class="nav-link" href="https://cloudsmith.cloud">← cloudsmith.cloud</a>
+  </nav>
+  <main>
+    <div class="badge">Blog — Coming Phase IV</div>
+    <h1>CloudSmith Blog</h1>
+    <p class="sub">Engineering updates, architecture deep dives, and release notes from the team building CloudSmith. Launching alongside the platform in Phase IV.</p>
+    <div class="links">
+      <a class="btn btn-primary" href="https://github.com/cloudsmith-cloud" target="_blank" rel="noopener noreferrer">Follow on GitHub</a>
+      <a class="btn btn-ghost" href="https://cloudsmith.cloud">Back to cloudsmith.cloud →</a>
+    </div>
+  </main>
+  <footer>
+    <a href="https://cloudsmith.cloud">cloudsmith.cloud</a> &nbsp;·&nbsp;
+    <a href="https://docs.cloudsmith.cloud">Docs</a> &nbsp;·&nbsp;
+    <a href="https://support.cloudsmith.cloud">Support</a> &nbsp;·&nbsp;
+    <a href="https://github.com/cloudsmith-cloud" target="_blank" rel="noopener noreferrer">GitHub</a> &nbsp;·&nbsp;
+    Apache 2.0
+  </footer>
+</body>
+</html>
