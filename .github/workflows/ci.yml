@@ -1,0 +1,15 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  dco:
+    if: github.event_name == 'pull_request'
+    uses: cloudsmith-cloud/cloudsmith-workflows/.github/workflows/dco-check.yml@v1.0.0
